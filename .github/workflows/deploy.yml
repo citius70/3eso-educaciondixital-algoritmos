@@ -1,19 +1,16 @@
-name: Deploy Docs to GitHub Pages
+name: Deploy Site to GitHub Pages
 
 on:
   push:
-    branches: ["main"] # Cambia a "master" si es el nombre de tu rama principal
+    branches: ["main"] # Asegúrate de que sea "main" o "master"
 
-  # Permite ejecutar este workflow manualmente desde la pestaña Actions
   workflow_dispatch:
 
-# Configura los permisos necesarios para GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Evita que se acumulen ejecuciones simultáneas
 concurrency:
   group: "pages"
   cancel-in-progress: false
@@ -34,8 +31,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Aquí indicamos que solo queremos subir el contenido de la carpeta /docs
-          path: './docs'
+          # CAMBIO CLAVE: Apuntamos a la carpeta donde están tus HTML
+          path: './site'
 
       - name: Deploy to GitHub Pages
         id: deployment
