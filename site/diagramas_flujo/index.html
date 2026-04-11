@@ -225,7 +225,7 @@
   <span class="md-ellipsis">
     
   
-    Inicio
+    Bienvenida
   
 
     
@@ -252,7 +252,7 @@
   <span class="md-ellipsis">
     
   
-    1. Introducción a la programación
+    1. ¿Qué es la programación?
   
 
     
@@ -747,6 +747,14 @@
 
 <h1 id="3-diagramas-de-flujo-la-representacion-grafica">3. Diagramas de Flujo: La representación gráfica<a class="headerlink" href="#3-diagramas-de-flujo-la-representacion-grafica" title="Permanent link">&para;</a></h1>
 <p>Un <strong>Diagrama de Flujo</strong> (o <em>flowchart</em>) es una <strong>herramienta visual que utiliza símbolos geométricos</strong> para representar la secuencia de instrucciones de un algoritmo. Es el puente entre nuestra idea y el código definitivo.</p>
+<pre class="mermaid"><code>graph TD
+    A([Inicio]) --&gt; B[Introducir pan en la tostadora]
+    B --&gt; C[Bajar la palanca]
+    C --&gt; D[Esperar a que salte]
+    D --&gt; E{¿Está tostada?}
+    E -- No --&gt; B
+    E -- Sí --&gt; F[Poner en el plato]
+    F --&gt; G([Fin])</code></pre>
 <h2 id="31-por-que-usarlos">3.1. ¿Por qué usarlos?<a class="headerlink" href="#31-por-que-usarlos" title="Permanent link">&para;</a></h2>
 <ul>
 <li><strong>Claridad visual:</strong> Permiten identificar errores en la lógica rápidamente.</li>
@@ -760,27 +768,70 @@
 <li><strong>Función:</strong> Indica el <strong>Inicio</strong> y el <strong>Fin</strong> del programa.</li>
 <li><strong>Regla:</strong> Todo diagrama debe tener exactamente uno de inicio y, al menos, uno de fin. Del bloque de Inicio solo puede salir una flecha.</li>
 </ul>
+<pre class="mermaid"><code>graph TD
+    Start([&lt;b&gt;Inicio&lt;/b&gt;]) --&gt; A[...]
+    A --&gt; B[...]
+    B --&gt; End([&lt;b&gt;Fin&lt;/b&gt;])
+class Start,End inicio_fin;
+class A,B proceso;
+style Start fill:#f9f,stroke:#333,stroke-width:2px;
+style End fill:#f9f,stroke:#333,stroke-width:2px;</code></pre>
 <h3 id="2-entrada-salida-paralelogramo">2. Entrada / Salida (Paralelogramo)<a class="headerlink" href="#2-entrada-salida-paralelogramo" title="Permanent link">&para;</a></h3>
 <ul>
 <li><strong>Función:</strong> Representa la interacción con el mundo exterior.</li>
 <li><strong>Entrada:</strong> Lectura de datos (ej: "Introduce tu nombre", "Leer nota").</li>
 <li><strong>Salida:</strong> Mostrar resultados en pantalla o impresora (ej: "Hola, Mundo", "El resultado es 10").</li>
 </ul>
+<pre class="mermaid"><code>graph TD
+    Start([&lt;b&gt;Inicio&lt;/b&gt;]) --&gt; A[/Introduca su nombre:/]
+    A --&gt; B[/Mostrar "Hola, " + nombre/]
+    B --&gt; End([&lt;b&gt;Fin&lt;/b&gt;])
+class Start,End inicio_fin;
+class A,B entrada
+style A fill:#f9f,stroke:#333,stroke-width:2px;
+style B fill:#e1f5fe,stroke:#01579b,stroke-width:2px;</code></pre>
 <h3 id="3-proceso-rectangulo">3. Proceso (Rectángulo)<a class="headerlink" href="#3-proceso-rectangulo" title="Permanent link">&para;</a></h3>
 <ul>
 <li><strong>Función:</strong> Representa cualquier operación interna.</li>
 <li><strong>Ejemplos:</strong> Cálculos matemáticos (<code>x = a + b</code>), asignación de valores (<code>puntos = 0</code>), o mover un objeto en la pantalla.</li>
 </ul>
+<pre class="mermaid"><code>graph TD    
+    Start([&lt;b&gt;Inicio&lt;/b&gt;]) --&gt; A[base = 5, altura = 10]
+    A --&gt; B[area = base * altura]
+    B --&gt; End([&lt;b&gt;Fin&lt;/b&gt;])
+class Start,End inicio_fin;
+class A,B proceso;
+style A fill:#f9f,stroke:#333,stroke-width:2px;
+style B fill:#f9f,stroke:#333,stroke-width:2px;</code></pre>
 <h3 id="4-decision-rombo">4. Decisión (Rombo)<a class="headerlink" href="#4-decision-rombo" title="Permanent link">&para;</a></h3>
 <ul>
 <li><strong>Función:</strong> Es el punto donde el programa toma un camino u otro tras evaluar una condición (que solo puede ser Verdadera o Falsa).</li>
 <li><strong>Regla:</strong> Del rombo siempre deben salir <strong>dos flechas</strong> claramente etiquetadas como <strong>SÍ</strong> y <strong>NO</strong>.</li>
 </ul>
+<pre class="mermaid"><code>graph TD
+    Start(["Inicio"]) --&gt; A["..."]
+    A --&gt; B{Nota &gt;= 5}
+    B -- "Sí" --&gt; C["Mostrar Aprobado"]
+    B -- "No" --&gt; D["Mostrar Suspenso"]
+    C --&gt; End(["Fin"])
+    D --&gt; End(["Fin"])
+
+class Start,End inicio_fin;
+class B decision;
+style B fill:#f9f,stroke:#333,stroke-width:2px;</code></pre>
 <h3 id="5-lineas-de-flujo-conectores-flechas">5. Líneas de Flujo / Conectores (Flechas)<a class="headerlink" href="#5-lineas-de-flujo-conectores-flechas" title="Permanent link">&para;</a></h3>
 <ul>
 <li><strong>Función:</strong> Indican el orden de ejecución.</li>
 <li><strong>Regla:</strong> Siempre deben ser líneas rectas (horizontales o verticales) y deben conectar los bloques sin cruzarse. El flujo estándar es de <strong>arriba hacia abajo</strong> y de <strong>izquierda a derecha</strong>.</li>
 </ul>
+<pre class="mermaid"><code>graph TD    
+    Start([&lt;b&gt;Inicio&lt;/b&gt;]) --&gt; A[Proceso 1]
+    A --&gt; B[Proceso 2]
+    B --&gt; C{¿Condición?}
+    C -- Sí --&gt; D[Proceso 3]
+    C -- No --&gt; E[Proceso 4]
+    D --&gt; End([&lt;b&gt;Fin&lt;/b&gt;])
+    E --&gt; End([&lt;b&gt;Fin&lt;/b&gt;])</code></pre>
 <h2 id="33-estructuras-de-control-avanzadas">3.3. Estructuras de Control Avanzadas<a class="headerlink" href="#33-estructuras-de-control-avanzadas" title="Permanent link">&para;</a></h2>
 <p>Para que un diagrama de fluxo sexa realmente útil, debemos entender as dúas estruturas que rompen a liña recta:</p>
 <h3 id="a-estructuras-condicionales-seleccion">A. Estructuras Condicionales (Selección)<a class="headerlink" href="#a-estructuras-condicionales-seleccion" title="Permanent link">&para;</a></h3>

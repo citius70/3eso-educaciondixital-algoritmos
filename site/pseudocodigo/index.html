@@ -223,7 +223,7 @@
   <span class="md-ellipsis">
     
   
-    Inicio
+    Bienvenida
   
 
     
@@ -250,7 +250,7 @@
   <span class="md-ellipsis">
     
   
-    1. Introducción a la programación
+    1. ¿Qué es la programación?
   
 
     
@@ -408,6 +408,28 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#421-declaracion-de-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2.1. Declaración de Variables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#422-asignacion-de-valores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2.2. Asignación de Valores
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#reglas-para-nombrar-variables" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -539,6 +561,28 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#421-declaracion-de-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2.1. Declaración de Variables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#422-asignacion-de-valores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2.2. Asignación de Valores
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#reglas-para-nombrar-variables" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -624,16 +668,38 @@
 <h1 id="4-pseudocodigo-hablando-como-un-programador">4. Pseudocódigo: Hablando como un programador<a class="headerlink" href="#4-pseudocodigo-hablando-como-un-programador" title="Permanent link">&para;</a></h1>
 <h2 id="41-que-es-el-pseudocodigo">4.1. ¿Qué es el Pseudocódigo?<a class="headerlink" href="#41-que-es-el-pseudocodigo" title="Permanent link">&para;</a></h2>
 <p>El <strong>pseudocódigo</strong> es un <strong>lenguaje de programación falso</strong> (de ahí el prefijo <em>pseudo</em>). No es código real que el ordenador pueda ejecutar, sino una forma de escribir los pasos del algoritmo utilizando nuestro propio idioma (español) pero siguiendo una estructura rígida.</p>
-<p><strong>¿Para qué sirve?</strong>
-* Permite centrarse en la lógica sin preocuparse de si falta un punto o una coma.
-* Es mucho más rápido de escribir que dibujar un diagrama de flujo.
-* Facilita la traducción final a cualquier lenguaje como Python o Java.</p>
+<p><strong>¿Para qué sirve?</strong></p>
+<ul>
+<li>Permite centrarse en la lógica sin preocuparse de si falta un punto o una coma.</li>
+<li>Es mucho más rápido de escribir que dibujar un diagrama de flujo.</li>
+<li>Facilita la traducción final a cualquier lenguaje como Python o Java.</li>
+</ul>
 <hr />
 <h2 id="42-las-variables-el-almacen-de-datos">4.2. Las Variables: El almacén de datos<a class="headerlink" href="#42-las-variables-el-almacen-de-datos" title="Permanent link">&para;</a></h2>
 <p>Como vimos anteriormente, una computadora necesita guardar información para trabajar con ella. Para ello utiliza <strong>Variables</strong>.</p>
-<p>Imagina una variable como una <strong>caja con una etiqueta</strong>. 
-* La <strong>etiqueta</strong> es el nombre de la variable (ej. <code>precio</code>, <code>edad</code>, <code>usuario</code>).
-* El <strong>contenido</strong> es el valor que guardamos dentro (ej. <code>10.5</code>, <code>15</code>, <code>"Juan"</code>).</p>
+<p>Imagina una variable como una <strong>caja con una etiqueta</strong>.</p>
+<ul>
+<li>La <strong>etiqueta</strong> es el nombre de la variable (ej. <code>precio</code>, <code>edad</code>, <code>usuario</code>).</li>
+<li>El <strong>contenido</strong> es el valor que guardamos dentro (ej. <code>10.5</code>, <code>15</code>, <code>"Juan"</code>).</li>
+</ul>
+<h3 id="421-declaracion-de-variables">4.2.1. Declaración de Variables<a class="headerlink" href="#421-declaracion-de-variables" title="Permanent link">&para;</a></h3>
+<p>La forma de declarar una variable en pseudocódigo es la siguiente:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>DEFINIR nombre_variable COMO TipoDeDato
+</span></code></pre></div>
+<p>Ejemplo:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>DEFINIR edad COMO Entero
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>DEFINIR nombre COMO Cadena
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>DEFINIR precio COMO Real
+</span></code></pre></div></p>
+<h3 id="422-asignacion-de-valores">4.2.2. Asignación de Valores<a class="headerlink" href="#422-asignacion-de-valores" title="Permanent link">&para;</a></h3>
+<p>Una vez declarada la variable, podemos asignarle un valor usando el operador <code>=</code>. En algunos, la asignación se hace con el operador <code>&lt;-</code>, pero en este curso usaremos el <code>=</code> para simplificar.:</p>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>nombre_variable = valor
+</span></code></pre></div>
+Ejemplo:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>edad = 14
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>nombre = &quot;Carlos&quot;
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>precio = 9.99
+</span></code></pre></div></p>
 <h3 id="reglas-para-nombrar-variables">Reglas para nombrar variables:<a class="headerlink" href="#reglas-para-nombrar-variables" title="Permanent link">&para;</a></h3>
 <ol>
 <li>Deben ser nombres descriptivos (mejor <code>base</code> que simplemente <code>b</code>).</li>
@@ -642,57 +708,64 @@
 </ol>
 <hr />
 <h2 id="43-tipos-de-datos">4.3. Tipos de Datos<a class="headerlink" href="#43-tipos-de-datos" title="Permanent link">&para;</a></h2>
-<p>No todas las cajas son iguales. En programación, debemos decirle al ordenador qué tipo de información vamos a guardar:
-* <strong>Enteros (Integer):</strong> Números sin decimales (ej. <code>edad = 14</code>).
-* <strong>Reales/Flotantes (Float):</strong> Números con decimales (ej. <code>nota = 8.5</code>).
-* <strong>Cadenas (String):</strong> Texto entre comillas (ej. <code>nombre = "Carlos"</code>).
-* <strong>Booleanos:</strong> Valores que solo pueden ser <strong>Verdadero</strong> o <strong>Falso</strong> (ej. <code>esta_lloviendo = Verdadero</code>).</p>
+<p>No todas las cajas son iguales. En programación, debemos decirle al ordenador qué tipo de información vamos a guardar:</p>
+<ul>
+<li><strong>Enteros (Integer):</strong> Números sin decimales (ej. <code>edad = 14</code>).  </li>
+<li><strong>Reales/Flotantes (Float):</strong> Números con decimales (ej. <code>nota = 8.5</code>).  </li>
+<li><strong>Cadenas (String):</strong> Texto entre comillas (ej. <code>nombre = "Carlos"</code>).  </li>
+<li><strong>Booleanos:</strong> Valores que solo pueden ser <strong>Verdadero</strong> o <strong>Falso</strong> (ej. <code>esta_lloviendo = Verdadero</code>).  </li>
+</ul>
 <hr />
 <h2 id="44-operadores-trabajando-con-los-datos">4.4. Operadores: Trabajando con los datos<a class="headerlink" href="#44-operadores-trabajando-con-los-datos" title="Permanent link">&para;</a></h2>
-<p>Para que el algoritmo haga algo útil, necesitamos operar con las variables:
-* <strong>Aritméticos:</strong> <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code> (suma, resta, multiplicación, división).
-* <strong>De comparación:</strong> <code>&gt;</code>, <code>&lt;</code>, <code>==</code> (igual a), <code>!=</code> (distinto de). Se usan mucho en los rombos de decisión.
-* <strong>De asignación:</strong> <code>=</code> (se usa para meter un valor en la caja: <code>puntos = 10</code>).</p>
+<p>Para que el algoritmo haga algo útil, necesitamos operar con las variables:</p>
+<ul>
+<li><strong>Aritméticos:</strong> <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code> (suma, resta, multiplicación, división).</li>
+<li><strong>De comparación:</strong> <code>&gt;</code>, <code>&lt;</code>, <code>==</code> (igual a), <code>!=</code> (distinto de). Se usan mucho en los rombos de decisión</li>
+<li><strong>De asignación:</strong> <code>=</code> (se usa para meter un valor en la caja: <code>puntos = 10</code>).</li>
+</ul>
 <hr />
 <h2 id="45-ejemplo-completo-del-diagrama-al-pseudocodigo">4.5. Ejemplo Completo: Del diagrama al pseudocódigo<a class="headerlink" href="#45-ejemplo-completo-del-diagrama-al-pseudocodigo" title="Permanent link">&para;</a></h2>
 <p>Vamos a traducir el ejemplo de tus archivos sobre <strong>sumar dos números</strong> a pseudocódigo técnico:</p>
+<blockquote>
+<p>Importante: Las líneas que llevan <code>//</code> es un comentario, es decir, una explicación que no se ejecuta. En algunos lenguajes de programación real se usan <code>//</code> para los comentarios de una sola línea, pero en pseudocódigo no hay una regla fija. Aquí lo usamos solo para aclarar cada paso.</p>
+</blockquote>
 <p><strong>Algoritmo: SumarDosNumeros</strong>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>INICIO
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    // Definición de variables
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    DEFINIR num1, num2, resultado COMO Entero
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    // Entrada de datos
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    ESCRIBIR &quot;Por favor, introduce el primer número:&quot;
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    LEER num1
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    ESCRIBIR &quot;Introduce el segundo número:&quot;
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    LEER num2
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    // Proceso
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    resultado = num1 + num2
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>    // Salida
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>    ESCRIBIR &quot;La suma de los dos números es: &quot;
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>    ESCRIBIR resultado
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>FIN
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>INICIO
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    // Definición de variables
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>    DEFINIR num1, num2, resultado COMO Entero
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>    // Entrada de datos
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    ESCRIBIR &quot;Por favor, introduce el primer número:&quot;
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>    LEER num1
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>    ESCRIBIR &quot;Introduce el segundo número:&quot;
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>    LEER num2
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>    // Proceso
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>    resultado = num1 + num2
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>    // Salida
+</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a>    ESCRIBIR &quot;La suma de los dos números es: &quot;
+</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a>    ESCRIBIR resultado
+</span><span id="__span-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a>FIN
 </span></code></pre></div></p>
 <hr />
 <h2 id="46-estructuras-condicionales-en-pseudocodigo">4.6. Estructuras Condicionales en Pseudocódigo<a class="headerlink" href="#46-estructuras-condicionales-en-pseudocodigo" title="Permanent link">&para;</a></h2>
 <p>Cuando en el diagrama de flujo usamos un rombo, en pseudocódigo usamos la estructura <strong>SI... ENTONCES... SINO</strong>:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>SI (condición) ENTONCES
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    Instrucciones si es verdad
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>SINO
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    Instrucciones si es falso
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>FIN SI
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>SI (condición) ENTONCES
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>    Instrucciones si es verdad
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>SINO
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    Instrucciones si es falso
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>FIN SI
 </span></code></pre></div>
 <p><strong>Ejemplo (Cálculo de la mitad de un número positivo):</strong>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>ESCRIBIR &quot;Introduce un número:&quot;
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>LEER x
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>SI x &gt; 0 ENTONCES
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    resultado = x / 2
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    ESCRIBIR resultado
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>SINO
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    ESCRIBIR &quot;Error: El número debe ser positivo&quot;
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>FIN SI
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>ESCRIBIR &quot;Introduce un número:&quot;
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>LEER x
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>SI x &gt; 0 ENTONCES
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>    resultado = x / 2
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>    ESCRIBIR resultado
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>SINO
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>    ESCRIBIR &quot;Error: El número debe ser positivo&quot;
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>FIN SI
 </span></code></pre></div></p>
 
 

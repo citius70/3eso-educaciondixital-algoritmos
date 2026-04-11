@@ -1,25 +1,32 @@
-# 1. Introducción a la programación
-
-Bienvenidos a la unidad de Programación. Hoy en día, la tecnología rodea casi todo lo que hacemos, desde el móvil hasta el funcionamiento de un semáforo o de un coche. Pero, ¿cómo saben estas máquinas lo que tienen que hacer? La respuesta está en la programación.
-
-## 1.1. ¿Qué es la programación?
+# 1. ¿Qué es la programación?
 
 !!!note "Definición"
     La **programación** es el **proceso de diseñar, codificar y mantener un conjunto de instrucciones** que una computadora (o cualquier dispositivo electrónico) debe seguir **para realizar una tarea específica**. 
 
 Podemos decir que programar es "escribir la guía" de cómo debe comportarse una máquina. Sin la programación, el hardware (los componentes físicos como el procesador o la pantalla) sería simplemente una caja de metal sin utilidad.
 
-## 1.2. El concepto de programa informático
+## 1.1. El concepto de programa informático
 
 !!!note "Definición"
     Un **programa informático** es una **secuencia lógica y ordenada de instrucciones** que una computadora interpreta para **resolver un problema o ejecutar una función**.    
+
+![Imagen de un programa informático](img/programa.jpg)
+
+Un programa es como una receta de cocina: tiene ingredientes (datos), pasos a seguir (instrucciones) y un resultado final (la comida). Por ejemplo, un programa para calcular la suma de dos números podría tener los siguientes pasos:
+
+1. Pedir al usuario que introduzca el primer número.
+2. Pedir al usuario que introduzca el segundo número.
+3. Sumar ambos números.
+4. Mostrar el resultado al usuario.
+5. Terminar el programa.
+   
 
 Para que un programa sea eficaz, debe cumplir tres condiciones:  
 1.  **Sintaxis correcta:** Las instrucciones deben estar escritas sin errores ortográficos o de estructura (según el lenguaje usado).  
 2.  **Lógica coherente:** El orden de los pasos debe tener sentido (no puedes mostrar un resultado antes de pedir los datos).  
 3.  **Eficiencia:** Debe resolver el problema de la forma más rápida y consumiendo los menores recursos posibles.  
 
-## 1.3. Los lenguajes de programación: El puente entre humanos y máquinas
+## 1.2. Los lenguajes de programación: El puente entre humanos y máquinas
 
 Como vimos, el ordenador solo entiende **sistema binario** (impulsos eléctricos representados por 0 y 1). Sin embargo, escribir millones de ceros y unos para crear una aplicación sería imposible para un ser humano. Aquí es donde entran los lenguajes de programación.
 
@@ -36,7 +43,7 @@ Puesto que el ordenador sigue hablando binario, necesitamos un "traductor". Exis
 * **Intérpretes:** Traducen y ejecutan la información línea por línea, en tiempo real. Si hay un error, el programa se para en esa línea exacta. Ejemplo: **Python**.  
 
 ### C. Los lenguajes más importantes hoy en día
-Dependiendo de lo que queramos construir, elegiremos una herramienta u otra. En el portal educativo de la **Xunta**, por ejemplo, se potencia mucho el uso de lenguajes visuales antes de pasar a los escritos:
+Dependiendo de lo que queramos construir, elegiremos una herramienta u otra. Algunos de los lenguajes más populares son:
 
 * **Lenguajes Visuales (Scratch / App Inventor):** Funcionan mediante bloques de colores que encajan entre sí. Son ideales para aprender la lógica sin cometer errores de escritura (sintaxis).
 * **Python:** Es el "rey" actual. Es fácil de leer, muy potente y se usa para todo: desde ciencia de datos hasta Instagram.
@@ -44,12 +51,15 @@ Dependiendo de lo que queramos construir, elegiremos una herramienta u otra. En 
 * **JavaScript:** El lenguaje que hace que las páginas web sean interactivas (animaciones, botones, formularios).
 * **Swift:** El lenguaje creado por Apple para desarrollar aplicaciones de iPhone y Mac.
 
+![Imagen de un programa informático](img/lenguajes.jpg)
+
+
 ### D. La importancia de la sintaxis
 Cada lenguaje tiene su propia **sintaxis**, que es el conjunto de reglas que definen cómo se deben escribir las instrucciones. 
 > **Dato curioso:** En programación, olvidar un simple punto y coma (`;`) o poner una mayúscula donde no toca puede hacer que todo un sistema complejo deje de funcionar. Por eso, además de lógica, la programación requiere mucha atención al detalle.
 
 
-## 1.4. ¿Por qué aprender a programar en 3º de ESO?
+## 1.3. ¿Por qué aprender a programar en 3º de ESO?
 Aprender a programar no solo sirve para crear aplicaciones. Desarrolla el **Pensamiento Computacional**, que incluye habilidades como: 
  
 * **Descomposición:** Romper un problema grande en partes pequeñas y fáciles de resolver.  

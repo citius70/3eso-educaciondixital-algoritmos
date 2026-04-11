@@ -44,13 +44,15 @@ graph LR
     class C output;
 ```
 
-
-
 ## 2.3. Algoritmos cotidianos (Ejemplos detallados)
 Analicemos algunos de los ejemplos que aparecen en la vida real para entender su estructura:
 
 ### A. Planchar una camisa (Proceso Secuencial)
+
 Este es un algoritmo puramente lineal:
+
+![Planchar una camisa](img/planchar1.jpg)
+
 
 ```mermaid
 graph TD
@@ -74,6 +76,8 @@ graph TD
 ```
 
 ### B. El algoritmo de la pesca
+
+![Pescar un pez](img/pescar1.jpg)
 
 ```mermaid
 graph TD

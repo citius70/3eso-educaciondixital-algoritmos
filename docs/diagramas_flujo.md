@@ -2,6 +2,17 @@
 
 Un **Diagrama de Flujo** (o *flowchart*) es una **herramienta visual que utiliza símbolos geométricos** para representar la secuencia de instrucciones de un algoritmo. Es el puente entre nuestra idea y el código definitivo.
 
+```mermaid
+graph TD
+    A([Inicio]) --> B[Introducir pan en la tostadora]
+    B --> C[Bajar la palanca]
+    C --> D[Esperar a que salte]
+    D --> E{¿Está tostada?}
+    E -- No --> B
+    E -- Sí --> F[Poner en el plato]
+    F --> G([Fin])
+```
+
 ## 3.1. ¿Por qué usarlos?
 * **Claridad visual:** Permiten identificar errores en la lógica rápidamente.
 * **Documentación:** Sirven para que otros programadores entiendan tu trabajo.
@@ -14,23 +25,80 @@ Cada figura geométrica ten un significado específico que non se debe confundir
 * **Función:** Indica el **Inicio** y el **Fin** del programa.
 * **Regla:** Todo diagrama debe tener exactamente uno de inicio y, al menos, uno de fin. Del bloque de Inicio solo puede salir una flecha.
 
+```mermaid
+graph TD
+    Start([<b>Inicio</b>]) --> A[...]
+    A --> B[...]
+    B --> End([<b>Fin</b>])
+class Start,End inicio_fin;
+class A,B proceso;
+style Start fill:#f9f,stroke:#333,stroke-width:2px;
+style End fill:#f9f,stroke:#333,stroke-width:2px;
+```
+
 ### 2. Entrada / Salida (Paralelogramo)
 * **Función:** Representa la interacción con el mundo exterior.
 * **Entrada:** Lectura de datos (ej: "Introduce tu nombre", "Leer nota").
 * **Salida:** Mostrar resultados en pantalla o impresora (ej: "Hola, Mundo", "El resultado es 10").
 
+```mermaid
+graph TD
+    Start([<b>Inicio</b>]) --> A[/Introduca su nombre:/]
+    A --> B[/Mostrar "Hola, " + nombre/]
+    B --> End([<b>Fin</b>])
+class Start,End inicio_fin;
+class A,B entrada
+style A fill:#f9f,stroke:#333,stroke-width:2px;
+style B fill:#e1f5fe,stroke:#01579b,stroke-width:2px;
+```     
+
 ### 3. Proceso (Rectángulo)
 * **Función:** Representa cualquier operación interna.
 * **Ejemplos:** Cálculos matemáticos (`x = a + b`), asignación de valores (`puntos = 0`), o mover un objeto en la pantalla.
+
+```mermaid
+graph TD    
+    Start([<b>Inicio</b>]) --> A[base = 5, altura = 10]
+    A --> B[area = base * altura]
+    B --> End([<b>Fin</b>])
+class Start,End inicio_fin;
+class A,B proceso;
+style A fill:#f9f,stroke:#333,stroke-width:2px;
+style B fill:#f9f,stroke:#333,stroke-width:2px;
+```
 
 ### 4. Decisión (Rombo)
 * **Función:** Es el punto donde el programa toma un camino u otro tras evaluar una condición (que solo puede ser Verdadera o Falsa).
 * **Regla:** Del rombo siempre deben salir **dos flechas** claramente etiquetadas como **SÍ** y **NO**.
 
+```mermaid
+graph TD
+    Start(["Inicio"]) --> A["..."]
+    A --> B{Nota >= 5}
+    B -- "Sí" --> C["Mostrar Aprobado"]
+    B -- "No" --> D["Mostrar Suspenso"]
+    C --> End(["Fin"])
+    D --> End(["Fin"])
+
+class Start,End inicio_fin;
+class B decision;
+style B fill:#f9f,stroke:#333,stroke-width:2px;
+``` 
+
 ### 5. Líneas de Flujo / Conectores (Flechas)
 * **Función:** Indican el orden de ejecución.
 * **Regla:** Siempre deben ser líneas rectas (horizontales o verticales) y deben conectar los bloques sin cruzarse. El flujo estándar es de **arriba hacia abajo** y de **izquierda a derecha**.
 
+```mermaid
+graph TD    
+    Start([<b>Inicio</b>]) --> A[Proceso 1]
+    A --> B[Proceso 2]
+    B --> C{¿Condición?}
+    C -- Sí --> D[Proceso 3]
+    C -- No --> E[Proceso 4]
+    D --> End([<b>Fin</b>])
+    E --> End([<b>Fin</b>])
+```         
 
 ## 3.3. Estructuras de Control Avanzadas
 Para que un diagrama de fluxo sexa realmente útil, debemos entender as dúas estruturas que rompen a liña recta:

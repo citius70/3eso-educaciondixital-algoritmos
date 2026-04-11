@@ -1,7 +1,11 @@
 ---
 icon: lucide/rocket
 ---
-# Inicio
+# Bienvenida
+
+Bienvenidos a la unidad de Programación. Hoy en día, la tecnología rodea casi todo lo que hacemos, desde el móvil hasta el funcionamiento de un semáforo o de un coche. Pero, ¿cómo saben estas máquinas lo que tienen que hacer? La respuesta está en la programación.
+
+## Introducción
 
 Vivimos rodeados de tecnología: móviles, videojuegos, redes sociales, robots… pero, ¿te has preguntado alguna vez cómo “saben” las máquinas lo que tienen que hacer?
 
