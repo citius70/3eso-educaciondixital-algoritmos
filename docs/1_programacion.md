@@ -38,7 +38,8 @@ No todos los lenguajes son iguales. Se clasifican principalmente por su "distanc
 3.  **Lenguajes de Alto Nivel:** Son los que usamos hoy en día. Utilizan una sintaxis muy parecida al lenguaje humano (mayormente en inglés). Esto permite que el programador se centre en la **lógica** del problema y no en cómo funciona el chip por dentro.
 
 ### B. ¿Cómo entiende el ordenador un lenguaje de alto nivel?
-Puesto que el ordenador sigue hablando binario, necesitamos un "traductor". Existen dos tipos principales:  
+Puesto que el ordenador sigue hablando binario, necesitamos un "traductor". Existen dos tipos principales:
+  
 * **Compiladores:** Traducen todo el código del programa de golpe y generan un archivo ejecutable (como un `.exe` en Windows). Ejemplo: **C++**.  
 * **Intérpretes:** Traducen y ejecutan la información línea por línea, en tiempo real. Si hay un error, el programa se para en esa línea exacta. Ejemplo: **Python**.  
 

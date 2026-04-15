@@ -16,4 +16,6 @@ Para poder entenderlos mejor y comunicarlos de forma clara, utilizamos dos herra
 * **Diagramas de flujo** 🧩: representan los pasos de un algoritmo mediante dibujos y símbolos, como si fuera un mapa visual del proceso.
 * **Pseudocódigo** 💻: es una forma de escribir algoritmos usando un lenguaje parecido al código, pero más sencillo y fácil de entender.
 
+![Ciclo](img/ciclo.png)
+
 En este curso aprenderás a pensar como un programador: descomponer problemas, organizar ideas y crear soluciones paso a paso. No solo te servirá para programar, sino también para resolver problemas en tu vida diaria de forma más lógica y eficiente.

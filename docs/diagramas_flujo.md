@@ -124,18 +124,20 @@ Permiten que el flujo vuelva hacia atrás para repetir un proceso. Es fundamenta
 Vexamos como pasar os algoritmos dos teus arquivos a diagramas reais:
 
 **Ejemplo 1: Cálculo del área de un rectángulo**
+
 1. **Inicio**
-2. **Entrada:** Leer Base ($B$) y Altura ($H$).
-3. **Proceso:** Calcular $Area = B \cdot H$.
-4. **Salida:** Mostrar el valor de "Area".
+2. **Entrada:** Leer Base **B** y Altura **H**.
+3. **Proceso:** Calcular **Area = B * H**.
+4. **Salida:** Mostrar el valor de **Area**.
 5. **Fin**
 
 **Ejemplo 2: ¿Aprobado o Suspenso?**
+
 1. **Inicio**
-2. **Entrada:** Leer Nota.
-3. **Decisión:** ¿Nota $\ge$ 5?
-    * **SÍ:** Mostrar "Aprobado".
-    * **NO:** Mostrar "Suspenso".
+2. **Entrada:** Leer **Nota**.
+3. **Decisión:** ¿**Nota >= 5**?
+    * **SÍ:** Mostrar "**Aprobado**".
+    * **NO:** Mostrar "**Suspenso**".
 4. **Fin**
 
 ---
@@ -143,10 +145,5 @@ Vexamos como pasar os algoritmos dos teus arquivos a diagramas reais:
 ## 3.5. Normas de Oro para dibujar Diagramas
 * No usar flechas que terminen en el aire; todas deben llegar a un bloque o a otra línea.
 * El texto dentro de los símbolos debe ser breve y claro.
-* Evitar que las líneas se crucen entre sí (usar conectores si el diagrama es muy grande).
-
----
-
-> **Nota para o profesor:** > Esta sección de diagramas de fluxo xa inclúe a simboloxía técnica completa.
-> 
-> ¿Pasamos ao **Punto 4: Pseudocódigo y Variables**, onde traducimos estes debuxos a algo máis parecido ao código real? Ou prefires que nos detoamos a facer uns **exercicios de debuxo de diagramas** antes de seguir?
+* Evitar que las líneas se crucen entre sí (usar conectores si el diagrama es muy grande).  
+* Siempre seguir el flujo de arriba hacia abajo y de izquierda a derecha para facilitar la lectura.
